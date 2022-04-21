@@ -1,0 +1,130 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box-game{
+    width: 40%;
+    height: 500px;
+    border: 1px solid #000;
+    overflow: hidden;
+    border-radius: 5px;
+    position: relative;
+}
+
+.tab-time{
+    width: 100%;
+    height: 10px;
+    background-color: red;
+    transition: all 5s;
+}
+
+.layout{
+    position: relative;
+    width: 100%;
+    height: 300px;
+    background-color:  #8B4513;
+}
+
+.check{
+    height: 200px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: 	#EE82EE ;
+}
+
+.dapan{
+    width: 100px;
+    height: 100px;
+    border: 1px solid #000;
+    line-height: 100px;
+    text-align: center;
+}
+
+.dapan:first-child{
+    font-size: 40px;
+    background-color: green;
+    color: white;
+    border-radius: 5px;
+}
+
+.dapan:last-child{
+    font-size: 40px;
+    background-color: red;
+    border-radius: 5px;
+    color: white;
+}
+
+.diem{
+    position: relative;
+    left: 350px;
+    top: 20px;
+    font-size: 30px;
+    color: #fff;
+}
+
+.bieuthucdungsai{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-size: 40px;
+    color: #fff;
+}
+
+.dapan:hover{
+    color: 	#FFFF00;
+    cursor: pointer;
+    opacity: 0.8;
+    /* transform: translateY(4px) ; */
+}
+
+.chet{
+    display: none;
+    width: 200px;
+    height: 200px;
+    background-color: red;
+    color: #fff;
+    position: absolute;
+    z-index: 1;
+    border-radius: 5px;
+}
+
+.diemthua,
+.chet h1{
+    text-align: center;
+}
+
+.choilai{
+    padding: 4px 8px;
+    margin: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.inlineblock{
+    display: inline-block;
+}
+
+.tab-time::before{
+    content: "";
+    display: block;
+    height: 20px;
+    width: 100%;
+    position: absolute;
+    background-color: green;
+    display:  none;
+}
